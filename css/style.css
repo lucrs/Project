@@ -2,6 +2,7 @@
 @import "about.css";
 @import "pills-tab.css";
 @import "comment.css";
+@import "team.css";
 #header{
     background-image: url("../images/header.jpg");
     width: 100%;
@@ -41,5 +42,15 @@
 .text-center{
     padding-top: 10px;
     text-align: center;
+}
+#footer{
+    background-color: #585c62;;
+}
+#footer .footer-text p{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+#footer .footer-text span{
+    color: rgb(250, 155, 3);
 }
 

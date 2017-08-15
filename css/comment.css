@@ -1,5 +1,5 @@
 #comment{
-    background-image: url("../images/black-white-nature-photography-1.jpg");
+    background-image: url("../images/bg-2.jpg");
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
@@ -7,37 +7,64 @@
     margin-top: 30px;
 }
 
-#comment blockquote {
-    border:none;
-    font-family:Georgia, "Times New Roman", Times, serif;
-    margin-bottom:-30px;
+.rslides {
     position: relative;
-    max-width: 400px;
-    margin: 0 auto;
-    padding-left: 0.4em;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-#comment blockquote h3 {
-    font-size:21px;
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
 }
 
-#comment blockquote h3:before {
-    content: "\201C";
-    font-weight: bold;
-    font-size:100px;
-    color:#889c0b;
-    position: absolute;
-    top: -0.2em;
-    left: -0.5em;
-    font-family: 'Georgia';
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
 }
-#comment blockquote h3:after {
-    content: "\201D";
-    font-weight: bold;
-    font-size:100px;
-    color:#889c0b;
-    position: absolute;
-    bottom: -0.6em;
-    right: 0;
-    font-family: 'Georgia';
+
+#comment .slide-comment{
+    text-align: center;
+    top: 65px;
 }
+
+#comment .slide-comment ul li i{
+    color: rgb(250, 155, 3);
+}
+#comment .slide-comment ul li h2{
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 5px;
+}
+#comment .slide-comment ul li h5{
+    margin-top: 10px;
+    color: rgb(250, 155, 3);
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2.5px;
+    margin-bottom: 8px;
+}
+
+#comment .slide-comment ul li h5::before{
+    content: "-";
+    margin-right: 5px;
+
+}
+
+#comment .blockquote{
+    font-style: normal;
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+
+}
+
+
