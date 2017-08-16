@@ -3,8 +3,11 @@
 @import "pills-tab.css";
 @import "comment.css";
 @import "team.css";
+@import "contact.css";
 #header{
     background-image: url("../images/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 720px;
     background-attachment: fixed;
@@ -52,5 +55,17 @@
 }
 #footer .footer-text span{
     color: rgb(250, 155, 3);
+}
+
+@media (max-width: 768px) {
+    #header .home h1{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 445px) {
+    #comment .slide-comment{
+        top:0;
+    }
 }
 
