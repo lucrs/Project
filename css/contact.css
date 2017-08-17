@@ -57,12 +57,16 @@
     opacity: 1;
     transition: ease .5s all;
 }
+
+#contact .input-control input:focus, #contact .input-control textarea:focus{
+    border-bottom: 1px solid rgb(250, 155, 3);
+}
 #contact .btn{
     border-radius: 9px;
     padding: 20px 60px;
     font-size: 18px;
     color: white;
-    background-color: #fa9b03;
+    background-color: rgb(250, 155, 3);
     width: auto;
     margin-top: 21px;
     border-bottom: 0 solid transparent;
@@ -71,4 +75,45 @@
 #contact .btn:hover{
     background-color: rgba(0, 0, 0, 0.33);
     transition: ease .5s all;
+}
+
+#contact .address-text{
+    color: white;
+    list-style: none;
+    letter-spacing: 5px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+#contact .address-text:after{
+    content: "";
+    border-bottom: 2px solid rgb(250, 155, 3);
+    display: block;
+    width: 45px;
+    margin-top: 10px;
+}
+#contact  ul{
+    padding: 0;
+    list-style: none;
+}
+
+#contact  ul li span{
+    color: rgb(250, 155, 3);
+    display: block;
+}
+
+#contact ul li p{
+    margin-bottom: 0;
+}
+#contact li{
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+#contact ul li a{
+    color: rgba(250, 155, 3, 0.54);
 }
