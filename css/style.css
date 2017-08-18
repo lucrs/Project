@@ -19,7 +19,11 @@
     background: transparent;
     line-height: 75px;
 }
-
+#header .navigation{
+    position: fixed;
+    transition: all 0.8s;
+    width: 100%;
+}
 #navbar li a:hover{
     color: rgb(250, 155, 3);
 }
@@ -104,5 +108,16 @@
     #comment .slide-comment{
         top:0;
     }
+}
+.on {
+    background-color: #222222 !important;
+    padding: 0 !important;
+    z-index: 99;
+    width: 100%;
+}
+nav a:hover,
+nav a.active {
+
+    color: rgb(250, 155, 3); !important;
 }
 
